@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="极简且优雅的个人主页：简介、书单、小游戏、简历下载">
+  <title>个人主页</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+SC:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <span class="dot"></span>
+        <a href="#" class="brand-name">Suri</a>
+      </div>
+      <nav class="primary-nav">
+        <a href="#about">关于</a>
+        <a href="#books">书单</a>
+        <a href="#games">小游戏</a>
+        <a href="#resume">属性</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero section">
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <h1 class="title">你好，我是 <span class="accent">Suri</span></h1>
+          <p class="subtitle">欢迎来到我的个人官网</p>
+          <div class="cta-row">
+            <a class="btn primary" href="#books">兴趣书单</a>
+            <a class="btn ghost" href="#games">试玩作品</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container columns reveal">
+        <div class="col about-text">
+          <h2 class="section-title">个人简介</h2>
+          <p class="lead">致力于构建更懂人类的AI | 数据运营 | 逻辑拆解</p>
+          <div class="links">
+            <a class="icon-link" href="mailto:hello@example.com" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Email</span>
+            </a>
+          </div>
+        </div>
+        <div class="col about-card">
+          <a class="xhs-card vivid" href="https://xhslink.com/m/38QBdad7PtF" target="_blank" rel="noopener noreferrer" aria-label="前往小红书">
+            <img class="xhs-avatar" src="./assets/avatar-xhs.png" alt="小红书头像">
+            <div class="xhs-copy">
+              <div class="xhs-title">我的小红书主页</div>
+              <div class="xhs-sub">点击进入，查看更多灵感</div>
+            </div>
+            <div class="xhs-arrow"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="books" class="section alt">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">兴趣书单</h2>
+          <p class="section-sub">近期在读与推荐，轻滑查看。</p>
+        </div>
+        <div class="scroller-wrap reveal">
+          <button class="scroller-btn prev" aria-label="上一组"><i class="fa-solid fa-angle-left"></i></button>
+          <div class="scroller" data-scroller>
+            <article class="book-card">
+              <img src="./assets/books/What I Know For Sure.jpg" alt="What I Know For Sure">
+              <div class="book-meta">
+                <h3>What I Know For Sure</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/中国社会各阶层分析.jpg" alt="中国社会各阶层分析">
+              <div class="book-meta">
+                <h3>中国社会各阶层分析</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/允许爱情消失.jpg" alt="允许爱情消失">
+              <div class="book-meta">
+                <h3>允许爱情消失</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/股经-走出幻觉 走向成熟.jpg" alt="股经-走出幻觉 走向成熟">
+              <div class="book-meta">
+                <h3>股经-走出幻觉 走向成熟</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/刻意练习：如何从新手到大师.jpg" alt="刻意练习：如何从新手到大师">
+              <div class="book-meta">
+                <h3>刻意练习：如何从新手到大师</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/学会提问.jpg" alt="学会提问">
+              <div class="book-meta">
+                <h3>学会提问</h3>
+              </div>
+            </article>
+            <article class="book-card">
+              <img src="./assets/books/赡养人类.jpg" alt="赡养人类">
+              <div class="book-meta">
+                <h3>赡养人类</h3>
+              </div>
+            </article>
+          </div>
+          <button class="scroller-btn next" aria-label="下一组"><i class="fa-solid fa-angle-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="games" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">vide-coding</h2>
+          <p class="section-sub">轻量、有趣、可玩。</p>
+        </div>
+        <div class="tetris-wrap reveal" id="tetris-wrap" tabindex="0" role="application" aria-label="俄罗斯方块游戏区域">
+          <div class="tetris-head">
+            <div class="tetris-title">俄罗斯方块</div>
+            <div class="tetris-actions">
+              <button class="btn small primary" id="tetris-start">开始</button>
+              <button class="btn small ghost" id="tetris-theme">夜间</button>
+            </div>
+          </div>
+          <div class="tetris-stage">
+            <canvas id="tetris" width="300" height="600" tabindex="-1"></canvas>
+            <div class="tetris-overlay" id="tetris-overlay">
+              <div class="embed-play play-inline"><i class="fa-solid fa-play"></i><span>点击开始</span></div>
+            </div>
+            <div class="tetris-info">
+              <div class="score"><i class="fa-solid fa-star"></i> <span id="tetris-score">0</span></div>
+              <canvas id="tetris-next" width="80" height="80"></canvas>
+            </div>
+          </div>
+          <p class="section-sub">操作：← → 移动，↑ 旋转，↓ 加速，空格直落，P 暂停，R 重开</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="resume" class="section alt">
+      <div class="container reveal">
+        <h2 class="section-title">我的标签</h2>
+        <p class="section-sub">动态泡泡，展示我的日常与偏好。</p>
+        <div class="bubble-cloud" id="tag-cloud" aria-label="个人标签云"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="copy">© <span id="y"></span> Suri</div>
+      <div class="footer-links">
+        <a href="https://github.com/yourname" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="mailto:hello@example.com" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
